@@ -3,6 +3,22 @@ require('dotenv').config();
 
 //-------------------------------------------------------//
 
+//Retorna todas las preguntas disponibles.
+
+async function getAll() {
+  try {
+    const jsonString = await fs.readFile('almacen-de-datos/trivial.json', 'utf-8');
+    const trivialData = JSON.parse(jsonString);
+    const preguntas = trivialData.preguntas;
+    return {datos: preguntas};
+  } 
+  catch (error) {
+    throw new Error('Error');
+  }
+}
+
+//-------------------------------------------------------//
+
 //Retorna una pregunta según el índice que le pasas como parámetro.
 async function getPregunta(indice){
 
@@ -63,5 +79,5 @@ async function getCategorias() {
 
 //-------------------------------------------------------//
 
-module.exports = { getPregunta, getPreguntasCategoria, getCategorias };
+module.exports = { getAll, getPregunta, getPreguntasCategoria, getCategorias };
 

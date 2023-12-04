@@ -1,6 +1,22 @@
 const express = require('express');
 const app = express();
-const { getPregunta,getPreguntasCategoria, getCategorias } = require('./ServicioTrivial');
+const { getAll, getPregunta, getPreguntasCategoria, getCategorias } = require('./ServicioTrivial');
+
+//-------------------------------------------------------//
+
+app.get('/todo', async (req, res) => {
+
+  try {
+    const datos = await getAll();
+    res.json(datos);
+  } 
+
+  catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+  
+});
+
 
 //-------------------------------------------------------//
 
