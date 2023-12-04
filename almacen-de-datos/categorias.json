@@ -1,0 +1,22 @@
+{
+    "categorias": [
+        {
+            "categoria":"Geografía"
+        },
+        {
+            "categoria":"Historia"
+        },
+        {
+            "categoria":"Literatura"
+        },
+        {
+            "categoria":"Ciencia"
+        },
+        {
+            "categoria":"Deporte"
+        },
+        {
+            "categoria":"Cine"
+        }
+    ]
+  }

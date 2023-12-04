@@ -1,11 +1,15 @@
 const express = require('express');
 const app = express();
-const { getPregunta,getPreguntasCategoria } = require('./ServicioTrivial');
+const { getPregunta,getPreguntasCategoria, getCategorias } = require('./ServicioTrivial');
+
+//-------------------------------------------------------//
 
 app.get('/pregunta', async (req, res) => {
 
+  const id = req.query.id;
+
   try {
-    const datos = await getPregunta(4);
+    const datos = await getPregunta(id-1);
     res.json(datos);
   } 
 
@@ -15,7 +19,9 @@ app.get('/pregunta', async (req, res) => {
   
 });
 
-app.get('/categoria', async (req, res) => {
+//-------------------------------------------------------//
+
+app.get('/preguntas-categoria', async (req, res) => {
 
   const categoria = req.query.categoria;
 
@@ -30,6 +36,22 @@ app.get('/categoria', async (req, res) => {
   
 });
 
+//-------------------------------------------------------//
+
+app.get('/categorias', async (req, res) => {
+
+  try {
+    const datos = await getCategorias();
+    res.json(datos);
+  } 
+
+  catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+  
+});
+
+//-------------------------------------------------------//
 
 app.listen(3000, () => {
   console.log('Servidor funcionando...');
