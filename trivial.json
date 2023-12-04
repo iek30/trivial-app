@@ -1,0 +1,65 @@
+{
+    "preguntas": [
+      {
+        "categoria": "Geografía",
+        "pregunta": "¿Cuál es la capital de Francia?",
+        "opciones": ["Londres", "París", "Berlín", "Madrid"],
+        "respuesta_correcta": "París"
+      },
+      {
+        "categoria": "Historia",
+        "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+        "opciones": ["1939", "1941", "1945", "1940"],
+        "respuesta_correcta": "1939"
+      },
+      {
+        "categoria": "Literatura",
+        "pregunta": "¿Quién escribió 'Romeo y Julieta'?",
+        "opciones": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Fyodor Dostoevsky"],
+        "respuesta_correcta": "William Shakespeare"
+      },
+      {
+        "categoria": "Geografía",
+        "pregunta": "¿Cuál es el río más largo del mundo?",
+        "opciones": ["Nilo", "Amazonas", "Misisipi", "Yangtsé"],
+        "respuesta_correcta": "Amazonas"
+      },
+      {
+        "categoria": "Ciencia",
+        "pregunta": "¿Qué planeta es conocido como 'el planeta rojo'?",
+        "opciones": ["Venus", "Marte", "Júpiter", "Saturno"],
+        "respuesta_correcta": "Marte"
+      },
+      {
+        "categoria": "Ciencia",
+        "pregunta": "¿Cuál es la distancia promedio de la Tierra al Sol?",
+        "opciones": ["92 millones de millas", "150 millones de kilómetros", "75 millones de millas", "200 millones de kilómetros"],
+        "respuesta_correcta": "150 millones de kilómetros"
+      },
+      {
+        "categoria": "Historia",
+        "pregunta": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?",
+        "opciones": ["1945", "1920", "1955", "1932"],
+        "respuesta_correcta": "1945"
+      },
+      {
+        "categoria": "Deporte",
+        "pregunta": "¿Cuál es el deporte más popular en el mundo?",
+        "opciones": ["Fútbol", "Baloncesto", "Críquet", "Tenis"],
+        "respuesta_correcta": "Fútbol"
+      },
+      {
+        "categoria": "Cine",
+        "pregunta": "¿Quién dirigió la trilogía 'El Señor de los Anillos'?",
+        "opciones": ["Christopher Nolan", "Steven Spielberg", "Peter Jackson", "George Lucas"],
+        "respuesta_correcta": "Peter Jackson"
+      },
+      {
+        "categoria": "Geografía",
+        "pregunta": "¿Cuál es la montaña más alta del mundo?",
+        "opciones": ["Monte Everest", "Monte Kilimanjaro", "Monte McKinley", "Monte Aconcagua"],
+        "respuesta_correcta": "Monte Everest"
+      }
+    ]
+  }
+  
